@@ -29,6 +29,7 @@ def test_divide_positive():
 def test_divide_negative():
     assert divide(-6, 3) == -2
 
+# An examlple of a negative test
 def test_divide_by_zero():
     with pytest.raises(ValueError) as excinfo:
         divide(6, 0)
