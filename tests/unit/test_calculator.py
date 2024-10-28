@@ -33,4 +33,4 @@ def test_divide_negative():
 def test_divide_by_zero():
     with pytest.raises(ValueError) as excinfo:
         divide(6, 0)
-    assert "Cannot divide by zero." in str(excinfo.value)
+    assert "Cannot divide by zero!" in str(excinfo.value)

@@ -29,4 +29,4 @@ def test_divide_api(client):
 def test_divide_by_zero_api(client):
     response = client.post('/divide', json={'a': 10, 'b': 0})
     assert response.status_code == 400
-    assert 'Cannot divide by zero.' in response.get_json()['error']
+    assert 'Cannot divide by zero!' in response.get_json()['error']
